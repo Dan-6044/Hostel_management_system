@@ -1,0 +1,28 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.env
+*.sqlite3
+
+# Django specific
+/static/
+db.sqlite3
+/media/
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log

@@ -1,0 +1,76 @@
+ /* Ensure the hero section takes up the full height of the viewport */
+ .hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style for carousel images to cover the hero section */
+.carousel-item {
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+/* Ensure overlay image covers the entire carousel item */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Dim the background */
+    z-index: 1;
+}
+
+/* Style for the carousel caption to center text and buttons */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%; /* Position caption slightly above the bottom */
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+/* Enhance readability of text */
+.carousel-caption h1 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.25rem; /* Adjust size as needed */
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem; /* Adjust button padding */
+    font-size: 1.125rem; /* Adjust font size */
+    border-radius: 0.5rem; /* Rounded corners */
+    background-color: #007bff; /* Customize button color */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Style carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
